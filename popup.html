@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción</title>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <style>
+        .popup-overlay {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .popup-content {
+            background: white;
+            padding: 20px;
+            max-width: 500px;
+            width: 90%;
+            border-radius: 10px;
+            position: relative;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div id="mc_embed_signup">
+                <form action="https://yogabcn.us4.list-manage.com/subscribe/post?u=1740c562bbc9711f8579eb834&amp;id=9f865246a7&amp;f_id=00591deaf0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div id="mc_embed_signup_scroll">
+                        <h2>Suscríbete para recibir consejos y estar al día de Ahora Hatha Yoga</h2>
+                        <div>
+                            <h3>Recibe el libro corto <i>"Yoga y Meditación para principiantes"</i> gratis al registrarte</h3>
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">Dirección de correo electrónico <span class="asterisk">*</span></label>
+                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">Nombre <span class="asterisk">*</span></label>
+                            <input type="text" name="FNAME" class="required text" id="mce-FNAME" required="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Suscribirme">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById("popup").style.display = "flex";
+        }, 10000); // Aparece después de 10 segundos
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
